@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BELLEARTEE | Trendy Fashion & Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --baby-pink: #ffe6f0;
+      --light-pink: #fdddec;
+      --hot-pink: #ff69b4;
+      --white: #ffffff;
+      --dark-text: #3d0b1c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--baby-pink);
+      background-image: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+      color: var(--dark-text);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-family: 'Fredoka', cursive;
+      font-size: 3rem;
+      color: black;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--hot-pink);
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: var(--light-pink);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--dark-text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background: var(--light-pink);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--hot-pink);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: var(--hot-pink);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 2rem;
+      width: 220px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      font-family: 'Fredoka', cursive;
+      font-size: 1.3rem;
+      color: var(--hot-pink);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Fredoka', cursive;
+      font-size: 2rem;
+      color: var(--hot-pink);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      text-align: left;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--dark-text);
+      border-top: 2px dotted var(--hot-pink);
+    }
+
+    @media screen and (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BELLEARTEE</h1>
+    <p>Bold Looks. Sweet Vibes. Always in Style 💖</p>
+  </header>
+
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="welcome">
+    <h2>Welcome to BELLEARTEE</h2>
+    <p>Discover the beauty of jewelry inspired by Pinterest, crafted with love and attention to detail.<br/>
+    Our online collection features unique and elegant designs to elevate your style.</p>
+  </section>
+
+  <section class="hero">
+    <h2>New Arrivals</h2>
+    <p>Get ready to fall in love with our newest creations 💖</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Best Sellers</h3>
+      <p>Your favorite pieces in one place</p>
+    </div>
+    <div class="card">
+      <h3>On Sale</h3>
+      <p>Snag stunning jewelry at sweet prices</p>
+    </div>
+    <div class="card">
+      <h3>Gallery</h3>
+      <p>See how our pieces shine IRL ✨</p>
+    </div>
+    <div class="card">
+      <h3>All Items</h3>
+      <p>Browse the full collection</p>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About Our Jewelry</h2>
+    <ul>
+      <li>Exclusive pieces that tell a story.</li>
+      <li>Unique designs inspired by Pinterest.</li>
+      <li>Quality materials for lasting beauty.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Stay Tuned!</h2>
+    <ul>
+      <li>We're building our collection and will be launching soon!</li>
+      <li>Follow us on Instagram for updates, sneak peeks, and behind-the-scenes insights.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Contact us through our <a href="https://instagram.com" target="_blank">@belleartee</a> page for inquiries!</p>
+  </section>
+
+  <footer>
+    &copy; 2025 BELLEARTEE. All rights reserved. Made with 💋
+  </footer>
+
+</body>
+</html>
